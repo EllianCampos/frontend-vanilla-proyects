@@ -1,4 +1,4 @@
-const api = 'http://elliancamposcrudapi.somee.com/api'
+const api = 'https://elliancamposcrudapi.somee.com/api'
 
 const tbody = document.getElementById('tbody')
 const form = document.getElementById('form')
