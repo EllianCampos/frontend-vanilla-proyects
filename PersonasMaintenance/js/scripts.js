@@ -1,4 +1,7 @@
-const api = 'https://elliancamposcrudapi.somee.com/api'
+const api = 'http://elliancamposcrudapi.somee.com/api'
+
+const headers = new Headers();
+headers.append('Content-Security-Policy', 'upgrade-insecure-requests');
 
 const tbody = document.getElementById('tbody')
 const form = document.getElementById('form')
@@ -30,7 +33,7 @@ form.addEventListener('submit', (e) => {
 })
 
 // Obtener
-fetch(`${api}/personas`)
+fetch(`${api}/personas`, {headers})
 .then(res => res.json())
 .then(res =>{
     for (const item of res) {
