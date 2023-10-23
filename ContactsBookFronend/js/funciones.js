@@ -1,4 +1,4 @@
-const api = 'http://elliancamposcrudapi.somee.com/api'
+const api = 'https://elliancamposcrudapi.somee.com/api'
 
 const setCookie = (name, value) => {
     document.cookie = `${name}=${encodeURIComponent(value)}; path=/`;
