@@ -70,7 +70,7 @@ form_singup.addEventListener('submit', async (e) => {
         body: JSON.stringify({
             "nombre": register_name.value,
             "correo": register_email.value,
-            "contraseña": register_password.value
+            "contrasena": register_password.value
         })})
         .then(res => {
             if (res.status === 200){
