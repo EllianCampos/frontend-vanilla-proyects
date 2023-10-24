@@ -35,7 +35,7 @@ sesionExpiredAlertBtn.onclick = () => (location.href = "index.html");
 
 // Cerrar sesion
 document.getElementById('logout').addEventListener('click', () => {
-  location.href = "/index.html"
+  location.href = "/contactsbookfronend/"
 })
 
 // Obtener contactos
