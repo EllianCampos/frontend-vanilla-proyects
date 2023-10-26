@@ -13,6 +13,5 @@ https://ellian-frontend-proyects.netlify.app/calculator/
 Simulador de billetera con programación funcional:
 https://ellian-frontend-proyects.netlify.app/functionalprogramingwallet/
 
-Sistema de gestíon de estacionamiento:
-Esta aplicación te permite gestionar un estacionamiento, puedes registrar un vehículo nuevo, 
-luego puedes sacar el vehículo y saber cuánto es el pago
+Sistema de gestíon de estacionamientos en el Local Storage:
+https://ellian-frontend-proyects.netlify.app/parkingjslocalstorage/
