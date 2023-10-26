@@ -1,0 +1,101 @@
+:root{
+    --bgLightColor: ; 
+    --letterLightColor: #000;
+    --bglightInput: #e9e9ed;
+
+    --bgDarkColor: #333;
+    --letterDarkColor: #fff;
+    --bgDarkInput: #555;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+    margin: 0;    
+    background-color: var(--bgLightColor);
+
+    transition: all .3s;
+}
+
+.themeSwitcher{
+    position: absolute;
+    width: 40px; 
+    height: 40px;
+    top: 5px; left: 5px;
+    cursor: pointer;
+}
+
+.themeSwitcher img{
+    width: 100%;
+    height: 100%;
+}
+
+.darkMode{
+    background-color: var(--bgDarkColor);
+}
+
+.darkMode [class^="btn"],
+.darkMode .screen,
+.darkMode .secundaryScreen{
+    color: var(--letterDarkColor);
+    background-color: var(--bgDarkInput);  
+}
+
+.darkMode .form{
+    box-shadow: none;
+}
+
+.form{
+    display: grid;
+    grid-template-rows: 5% 10% auto auto auto;
+
+    border: 1px solid black;
+    width: 90%;
+    height: 90%;
+
+    border: none;
+    box-shadow: 0 0 10px 5px silver;
+}
+
+.screen,
+.secundaryScreen{
+    grid-column: 1 / span 5;
+    text-align: right;
+    font-size: 1.5em;
+    border: none;
+    background-color: var(--bglightInput);
+}
+
+.btn_backspace{
+    font-size: 0.5em;
+}
+
+.btn_equality{
+    grid-column: 5 / 5;
+    grid-row: 5 / span 3;
+}
+
+[class^="btn"] {
+    padding: 5px;
+    margin: 1px;
+    border: none;
+    font-size: 1.5em;
+}
+
+@media screen and (min-width:480px){
+    .form{
+        width: 480px;
+        height: 60vh;
+    }
+}
+
+
+
+
